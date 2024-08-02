@@ -74,7 +74,11 @@ const FileUploadComponent = () => {
       </Row>
       <Row className="mt-3">
         <Col className="text-center">
-          <Button onClick={handleUpload} disabled={!file || uploading}>
+          <Button
+            onClick={handleUpload}
+            disabled={!file || uploading}
+            className="btn btn-secondary"
+          >
             {uploading ? (
               <Spinner as="span" animation="border" size="sm" />
             ) : (

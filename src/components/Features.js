@@ -3,7 +3,7 @@ import React from "react";
 const FeaturesComponent = () => {
   return (
     <div>
-      <h5>Features and advantages</h5>
+      <h5>Features</h5>
       <div className="list-group">
         <p className="list-group-item list-group-item-action flex-column align-items-start features">
           <div className="d-flex w-100 justify-content-between features">
