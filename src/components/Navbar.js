@@ -10,7 +10,7 @@ const NavbarComponent = () => {
       <NavbarBrand href="/summarize" className="fs-6 mx-10">
         Summarize
       </NavbarBrand>
-      <NavbarBrand href="#home" className="fs-6">
+      <NavbarBrand href="/score" className="fs-6">
         JD-Score
       </NavbarBrand>
     </Navbar>
