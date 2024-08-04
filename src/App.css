@@ -20,4 +20,11 @@ body {
     border-color: #ffffff !important;
   }
 
+  .logo{
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
 

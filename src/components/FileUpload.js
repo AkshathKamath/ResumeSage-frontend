@@ -66,7 +66,7 @@ const FileUploadComponent = () => {
               <Alert variant="secondary">
                 {isDragActive
                   ? "Drop the files here..."
-                  : "Drag 'n' drop a resume.pdf here, or click to select files"}
+                  : "Drag 'n' drop your Resume here, or click to select file."}
               </Alert>
             )}
           </div>
@@ -95,11 +95,17 @@ const FileUploadComponent = () => {
         </Row>
       )}
       {uploadSuccess && (
-        <Row className="mt-3">
-          <Col>
-            <Alert variant="success">File uploaded successfully!</Alert>
-          </Col>
-        </Row>
+        <div>
+          <Row className="mt-3">
+            <Col>
+              <Alert variant="success">File uploaded successfully!</Alert>
+            </Col>
+          </Row>
+          <h6 className="my-2">
+            View your <a href="/summarize"> Resume Summary </a> or view how well
+            your <a href="/score">Resume fits </a> with the Job you aim for!
+          </h6>
+        </div>
       )}
     </Container>
   );

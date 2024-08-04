@@ -40,14 +40,18 @@ const ScorePage = () => {
     }
   };
 
+  const linkedInUrl = `https://www.linkedin.com/jobs/search/?&geoId=103644278&keywords=${encodeURIComponent(
+    jobRole
+  )}&origin=JOBS_HOME_KEYWORD_HISTORY&refresh=true`;
+
   return (
     <div>
       <NavbarComponent />
       <Container className="mt-5">
-        <h3>Job Form</h3>
+        <h3>Job Details</h3>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formJobRole">
-            <Form.Label>Enter Job Role</Form.Label>
+            <Form.Label>Enter Job Role:</Form.Label>
             <Form.Control
               type="text"
               value={jobRole}
@@ -57,7 +61,7 @@ const ScorePage = () => {
           </Form.Group>
 
           <Form.Group controlId="formJobDescription" className="mt-3">
-            <Form.Label> Enter Job Description</Form.Label>
+            <Form.Label> Enter Job Description:</Form.Label>
             <Form.Control
               as="textarea"
               rows={5}
@@ -78,7 +82,9 @@ const ScorePage = () => {
         </Form>
         {responseData && (
           <div>
-            <h5 className="my-2">JD-Resume Fit Score: {responseData.score}</h5>
+            <h5 className="my-2">
+              JD-Resume Fit Score: {responseData.score}/10
+            </h5>
             <h6 className="my-4">Improvements:</h6>
             <Card
               className="mt-2"
@@ -99,6 +105,13 @@ const ScorePage = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
+            <h6 className="my-2">
+              Apply for {jobRole} roles on{" "}
+              <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                LinkedIN
+              </a>
+              !
+            </h6>
           </div>
         )}
       </Container>
