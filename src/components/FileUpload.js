@@ -34,7 +34,7 @@ const FileUploadComponent = () => {
 
     try {
       const response = await axios.post(
-        "https://resume-help-backend.vercel.app/upload",
+        "https://resumesage-backend-production.up.railway.app/upload",
         formData,
         {
           headers: {

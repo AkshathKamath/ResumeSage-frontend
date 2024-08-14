@@ -21,8 +21,15 @@ const ScorePage = () => {
     setLoading(true);
 
     try {
+      // const response = await axios.post(
+      //   "https://resume-help-backend.vercel.app/score",
+      //   {
+      //     role: jobRole,
+      //     jd: jobDescription,
+      //   }
+      // );
       const response = await axios.post(
-        "https://resume-help-backend.vercel.app/score",
+        "https://resumesage-backend-production.up.railway.app/score",
         {
           role: jobRole,
           jd: jobDescription,
