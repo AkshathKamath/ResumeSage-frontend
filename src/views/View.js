@@ -35,7 +35,7 @@ const ViewPage = () => {
         <Button variant="secondary" onClick={() => setModalShow(true)}>
           View Resume
         </Button>
-        <h5 className="my-2">Imporvements:</h5>
+        <h5 className="my-2">Improvements:</h5>
         {loading ? (
           <Spinner animation="border" />
         ) : (
