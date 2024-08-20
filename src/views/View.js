@@ -15,7 +15,8 @@ const ViewPage = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://resumesage-backend-production.up.railway.app/view"
+          // "https://resumesage-backend-production.up.railway.app/view"
+          "https://resumesage-backend-v3-production.up.railway.app/view"
         );
         setResponseData(response.data);
         setLoading(false);

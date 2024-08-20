@@ -29,7 +29,12 @@ const ScorePage = () => {
       //   }
       // );
       const response = await axios.post(
-        "https://resumesage-backend-production.up.railway.app/score",
+        // "https://resumesage-backend-production.up.railway.app/score",
+        // {
+        //   role: jobRole,
+        //   jd: jobDescription,
+        // }
+        "https://resumesage-backend-v3-production.up.railway.app/score",
         {
           role: jobRole,
           jd: jobDescription,
