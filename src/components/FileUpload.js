@@ -34,20 +34,20 @@ const FileUploadComponent = () => {
 
     try {
       const response = await axios.post(
-        "https://resumesage-backend-production.up.railway.app/upload",
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-        // "https://resumesage-backend-v3-production.up.railway.app/upload",
+        // "https://resumesage-backend-production.up.railway.app/upload",
         // formData,
         // {
         //   headers: {
         //     "Content-Type": "multipart/form-data",
         //   },
         // }
+        "https://resumesage-backend-v3-production.up.railway.app/upload",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
       );
       setUploading(false);
       setUploadSuccess(true);
