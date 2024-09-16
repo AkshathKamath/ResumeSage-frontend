@@ -18,6 +18,9 @@ const NavbarComponent = () => {
       <NavbarBrand href="/score" className="fs-6">
         JD-Score
       </NavbarBrand>
+      <NavbarBrand href="/connect" className="fs-6 mx-10">
+        Connect
+      </NavbarBrand>
     </Navbar>
   );
 };
